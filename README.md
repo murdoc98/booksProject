@@ -27,7 +27,7 @@ The system will have three main sections:
 * Additional info
 ## Mockup
 The style, colors and format is left to developer preference, here is a proposed mockup, but you can use other.
-
+![image](https://user-images.githubusercontent.com/32147778/230745821-f481f768-0a4d-44e1-a25a-edd7a5de4f22.png)
 
 # Documentation
 ## Deployment
@@ -35,6 +35,10 @@ The system has two deploy starategies:
 * **Just frontend**: Enable the system to execute the system on Vercel for free use and store the data on client's browser, it is the default configuration.
 *  **Full system**: It needs to have a backend available, it needs to use this deploy strategy, modify the variables available on environment.json to the one required there, and **envMode** to production.
 ## Diagrams
+![image](https://user-images.githubusercontent.com/32147778/230745833-2fb8027a-bc33-4d28-8f2a-92af0cd8ddaf.png)
+![image](https://user-images.githubusercontent.com/32147778/230745844-bda51483-cbae-425d-ae3a-43a50bf9826e.png)
+![image](https://user-images.githubusercontent.com/32147778/230745856-a5187ce4-ac04-4562-814c-a3167d9de2d2.png)
+![image](https://user-images.githubusercontent.com/32147778/230745866-0a8fc75f-84fd-41ad-868d-08f7ba366949.png)
 
 ## Technologies used
 * **Backend**: Node.js, Express.js, Mongoose, PM2
