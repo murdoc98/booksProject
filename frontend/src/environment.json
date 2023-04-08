@@ -1,9 +1,9 @@
 {
   "envMode": "development",
-  "baseURL": "http://localhost:1025/api",
+  "baseURL": "sample",
   "auth0": {
-    "domain": "dev-jb4f9d30.us.auth0.com",
-    "clientId": "063Y58oVxXhu4LVKXjTRMsjRUyIXILJc",
-    "audience": "https://dev-jb4f9d30.us.auth0.com/api/v2/"
+    "domain": "sample",
+    "clientId": "sample",
+    "audience": "sample"
   }
 }
