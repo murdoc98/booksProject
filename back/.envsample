@@ -1,0 +1,14 @@
+# Server conf
+NODE_ENV=<prod, dev, qa>
+SERVER_PORT=sample
+
+# Database conf
+DB_HOST=sample
+DB_PORT=sample
+DB_USER=sample
+DB_PASS=sample
+DB_NAME=sample
+
+# Auth0 conf
+ATUH0_AUDIENCE=sample
+AUTH0_ISSUEBASEURL=sample

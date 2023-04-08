@@ -1,0 +1,198 @@
+components:
+  securitySchemes:
+    bearerAuth:            # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+security:
+  - bearerAuth: []   
+tags:
+  name: Book's project
+  description: Endpoints available for the book's project
+paths:
+  /:
+    get:
+      summary: Test endpoint, it is used to check the availability of the service, it can be used as healthcheck entry for further implementations
+      responses:
+        '200':
+          description: The service is available
+  /currentUser:
+    get:
+      summary: Get all data available for the current user
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Book registered succesfully
+        '401':
+          description: User unauthenticated
+        '500':
+          description: Something goes wrong on backend
+  /bookToRead:
+    post:
+      summary: Post a book to be readed
+      tags: [Books to read]
+      security:
+        - bearerAuth: []
+      requestBody:
+       content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: The bible
+                key:
+                  type: string
+                  example: klbgfh45987
+      responses:
+        '200':
+          description: Book registered succesfully
+        '401':
+          description: User unauthenticated
+        '500':
+          description: Something goes wrong on backend
+  /bookToRead/{userId}:
+    delete:
+      summary: Delete an item in books to read
+      tags: [Books to read]
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Id of the item to delete
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Book deleted succesfully
+        '401':
+          description: User unauthenticated
+        '500':
+          description: Something goes wrong on backend
+  /bookreaded:
+    post:
+      summary: Post a book readed
+      tags: [Books readed]
+      security:
+        - bearerAuth: []
+      requestBody:
+       content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: The bible
+                external_id:
+                  type: string
+                  example: klbgfh45987
+                name:
+                  type: string
+                  example: klbgfh45987
+                endDate:
+                  type: string
+                  example: klbgfh45987
+                startDate:
+                  type: string
+                  example: klbgfh45987
+                author:
+                  type: string
+                  example: klbgfh45987
+                totalPages:
+                  type: string
+                  example: klbgfh45987
+                review:
+                  type: string
+                  example: klbgfh45987
+                score:
+                  type: string
+                  example: klbgfh45987
+                publisher:
+                  type: string
+                  example: klbgfh45987
+                publishYear:
+                  type: string
+                  example: klbgfh45987
+      responses:
+        '200':
+          description: Book registered succesfully
+        '401':
+          description: User unauthenticated
+        '500':
+          description: Something goes wrong on backend
+  /bookreaded/{userId}:
+    delete:
+      summary: Delete an item in books readed
+      tags: [Books readed]
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Id of the item to delete
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Book deleted succesfully
+        '401':
+          description: User unauthenticated
+        '500':
+          description: Something goes wrong on backend
+    put:
+      summary: Update an item in books readed
+      tags: [Books readed]
+      security:
+        - bearerAuth: []
+      requestBody:
+       content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: The bible
+                external_id:
+                  type: string
+                  example: klbgfh45987
+                name:
+                  type: string
+                  example: klbgfh45987
+                endDate:
+                  type: string
+                  example: klbgfh45987
+                startDate:
+                  type: string
+                  example: klbgfh45987
+                author:
+                  type: string
+                  example: klbgfh45987
+                totalPages:
+                  type: string
+                  example: klbgfh45987
+                review:
+                  type: string
+                  example: klbgfh45987
+                score:
+                  type: string
+                  example: klbgfh45987
+                publisher:
+                  type: string
+                  example: klbgfh45987
+                publishYear:
+                  type: string
+                  example: klbgfh45987
+      responses:
+        '200':
+          description: Book registered succesfully
+        '401':
+          description: User unauthenticated
+        '500':
+          description: Something goes wrong on backend
