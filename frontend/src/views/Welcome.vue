@@ -16,14 +16,14 @@
         <p class="subheading font-weight-regular">
           This is a technical test developed to
           <a href="https://fpalpha.com/" target="_blank">FP Alpha</a> <br />If
-          you want more info about the implementation reach me at
-          <a href="https://github.com/murdoc98" target="_blank">Github</a>
+          you want more info about the implementation check the
+          <a href="https://github.com/murdoc98/booksProject" target="_blank">documentation</a> on Github
         </p>
       </v-col>
     </v-row>
   </v-container>
 </template>
-<script setup>
+<script lang="ts" setup>
 import { useAppStore } from '@/store/app.store'
 import { storeToRefs } from 'pinia';
 

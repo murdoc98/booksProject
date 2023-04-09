@@ -4,6 +4,8 @@
     "target": "esnext",
     "useDefineForClassFields": true,
     "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "skipLibCheck": true,
     // "composite": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -27,5 +29,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "vite.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

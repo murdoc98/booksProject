@@ -17,14 +17,7 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue
-        eros vitae purus tincidunt commodo. Mauris in nulla a quam dignissim
-        laoreet consequat vitae libero. In hac habitasse platea dictumst.
-        Phasellus eget congue augue, quis ornare turpis. Etiam tristique
-        tincidunt arcu, elementum convallis eros mattis ut. Cras venenatis,
-        neque eget rhoncus molestie, lacus enim efficitur libero, nec vehicula
-        velit mi sit amet nulla. Proin tincidunt magna quis odio mollis,
-        fermentum tempor nulla elementum.
+        It began with the forging of the Great Rings. Three were given to the Elves, immortal, wisest and fairest of all beings. Seven to the Dwarf-Lords, great miners and craftsmen of the mountain halls. And nine, nine rings were gifted to the race of Men, who above all else desire power. For within these rings was bound the strength and the will to govern each race. But they were all of them deceived, for another ring was made. Deep in the land of Mordor, in the Fires of Mount Doom, the Dark Lord Sauron forged a master ring, and into this ring he poured his cruelty, his malice and his will to dominate all life.
       </v-card-text>
 
       <v-divider></v-divider>

@@ -2,7 +2,7 @@
   <v-container :class='envMode != "production" ? "envMode": ""'>
     <h1>Welcome reader #{{ userId }}</h1>
     <v-row>
-      <v-col cols="9">
+      <v-col cols="12" sm="9">
         <div class="content">
           <div class="content-title">
             <h2>Readed</h2>
@@ -22,9 +22,10 @@
             <div v-else>
               <v-row>
                 <v-col
-                  cols="6"
+                  cols="12"
+                  sm="6"
                   v-for="item in booksReaded"
-                  :key="item.id"
+                  :key="item._id"
                 >
                   <v-card>
                     <v-card-text>
@@ -80,7 +81,7 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="3">
+      <v-col cols="12" sm="3">
         <div class="content">
           <div class="content-title">
             <h2>My stats</h2>
@@ -172,7 +173,7 @@
     ></ConfirmDelete>
   </v-container>
 </template>
-<script setup>
+<script lang="ts" setup>
 import { onMounted } from "@vue/runtime-core";
 import { ref } from 'vue'
 import { storeToRefs } from 'pinia';
